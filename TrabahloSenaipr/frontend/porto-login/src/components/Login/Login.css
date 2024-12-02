@@ -1,0 +1,88 @@
+/* Container geral para login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 20px;
+  height: auto; /* Ajusta o tamanho automaticamente */
+  background-color: aliceblue;
+}
+
+/* Formulário de login */
+.login-form, .add-ship-form {
+  background-color: #F2F2F2;
+  padding: 30px;
+  border-radius: 8px;
+  width: 480px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 30px;
+}
+
+.login-form h2 {
+  color: #00796B;
+  text-align: center; /* Centraliza o título */
+}
+
+/* Centralizar e organizar os campos de entrada */
+.input-group {
+  margin: 10px 0; /* Diminuiu o espaçamento vertical */
+  display: flex;
+  flex-direction: column; /* Mantém o alinhamento vertical */
+  align-items: center; /* Alinha os campos no centro */
+}
+
+.input-group label {
+  text-align: left;
+  font-weight: bold; /* Destaca o texto do rótulo */
+  margin-bottom: 5px; /* Pequeno espaço entre o rótulo e o input */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Botões: login, adicionar navio, logout, editar e deletar */
+.login-button, .logout-button, .edit-button, .delete-button {
+  background-color: #00796B;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover, .logout-button:hover, .edit-button:hover, .delete-button:hover {
+  background-color: #005f56;
+}
+
+/* Lembrar-se e Cadastre-se */
+.remember-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.remember-container label {
+  display: flex;
+  align-items: center;
+}
+
+.remember-container a {
+  text-decoration: none;
+  color: #00796B;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.remember-container a:hover {
+  color: #005f56;
+}
