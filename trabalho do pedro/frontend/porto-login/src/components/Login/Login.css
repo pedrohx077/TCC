@@ -1,0 +1,127 @@
+/* Fundo da página com tema portuário */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://files.oaiusercontent.com/file-RFuN6baQcM2Waogrx9MPww?se=2024-12-03T18%3A39%3A12Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8ee83170-c251-4acd-880a-55c58586a60e.webp&sig=YT/0q1xb0qeT6XPk4eGena29QkeTGCKhhaRxAc69tlc%3D') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+  }
+    
+  /* Container geral para login */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 20px;
+    margin: 100px auto; /* Centraliza verticalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 65%; /* Move o formulário para o lado direito */
+    top: 0%; /* Alinha verticalmente */
+  }
+  
+  /* Estilização do formulário */
+  .login-form {
+    width: 100%;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    color: #000000; /* Cor vibrante para o título */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Mensagem de erro */
+  .error-message {
+    text-align: center;
+    color: #FF6F61;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Campos de entrada */
+  .input-group {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+  
+  /* Botão de login */
+  .login-button {
+    background-color: #07909d;
+    color: #000;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .login-button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+  }
+  
+  /* Checkbox e link de registro */
+  .remember-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .remember-container label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .remember-container a {
+    color: #2c86b0d0;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .remember-container a:hover {
+    color: #0880a588;
+  }
+  
+  /* Adaptação para telas menores */
+  @media screen and (max-width: 768px) {
+    .login-container {
+      position: static; /* Centraliza no meio em telas pequenas */
+      margin: 20px auto;
+      width: 90%;
+    }
+    .login-form h2 {
+      font-size: 20px;
+    }
+  }
+  
