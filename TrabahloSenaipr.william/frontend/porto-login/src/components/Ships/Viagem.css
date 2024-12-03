@@ -1,0 +1,96 @@
+/* Geral */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Garante que ocupem toda a altura da janela */
+  background-color: #f2f2f2; /* Cor de fundo */
+}
+
+/* Layout principal */
+body {
+  display: flex;
+  flex-direction: column; /* Permite que o conteúdo flua verticalmente */
+}
+
+/* Header */
+header {
+  background-color: #00d7ff; /* Azul */
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 24px;
+  flex-shrink: 0; /* Impede que o header encolha */
+}
+
+/* Footer */
+footer {
+  background-color: #00d7ff; /* Azul */
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  flex-shrink: 0; /* Impede que o footer encolha */
+}
+
+/* Container principal */
+.viagem-container {
+  background-color: white;
+  margin: 20px auto; /* Centraliza horizontalmente */
+  padding: 20px;
+  flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+  max-width: 500px; /* Largura fixa */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  border-radius: 8px; /* Cantos arredondados */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente dentro do container */
+}
+
+/* Título */
+.viagem-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Formulário */
+.viagem-container form div {
+  margin-bottom: 15px;
+}
+
+.viagem-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.viagem-container input,
+.viagem-container textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botões */
+.viagem-buttons {
+  display: flex;
+  justify-content: space-between; /* Espaça os botões */
+  margin-top: 20px;
+}
+
+.viagem-buttons button {
+  background-color: #00d7ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.viagem-buttons button:hover {
+  background-color: #00b3cc;
+}
