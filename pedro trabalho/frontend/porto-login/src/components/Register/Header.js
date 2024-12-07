@@ -5,7 +5,7 @@ import React from 'react';
 const Header = () => {
   return (
     <div className="header-container">
-      <div className="header-title">Milkspace</div>
+      <div className="header-title"></div>
     </div>
   );
 };
